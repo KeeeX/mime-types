@@ -39,8 +39,15 @@ so open a PR there if you'd like to add mime types.
 
 ## API
 
+In node:
 ```js
 var mime = require('mime-types')
+```
+
+If your JavaScript engine does not have a `path` module, you have to provide your own implementation of `extname()`:
+```js
+var extname = require('some-other-library')
+var mime = require('mime-types/base').mime(extname)
 ```
 
 All functions return `false` if input is invalid or not found.
