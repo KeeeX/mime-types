@@ -1,11 +1,5 @@
 # mime-types
 
-[![NPM Version][npm-version-image]][npm-url]
-[![NPM Downloads][npm-downloads-image]][npm-url]
-[![Node.js Version][node-version-image]][node-version-url]
-[![Build Status][travis-image]][travis-url]
-[![Test Coverage][coveralls-image]][coveralls-url]
-
 The ultimate javascript content-type utility.
 
 Similar to [the `mime@1.x` module](https://www.npmjs.com/package/mime), except:
@@ -21,12 +15,19 @@ Otherwise, the API is compatible with `mime` 1.x.
 
 ## Install
 
-This is a [Node.js](https://nodejs.org/en/) module available through the
-[npm registry](https://www.npmjs.com/). Installation is done using the
-[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
+This fork of [mime-types](https://github.com/jshttp/mime-types) is not published on the [npm registry](https://www.npmjs.com/).
+If you have access to our private repository you can install using `npm install @keeex/mime-types`.
 
-```sh
-$ npm install mime-types
+It is otherwise possible to install the package by hand.
+First, clone this repository; install dependencies, then build package.
+Finally, install in your project.
+```Shell
+/ $ git clone https://github.com/KeeeX/mime-types.git
+/ $ cd mime-types
+/mime-types $ npm install
+/mime-types $ npm pack
+/mime-types $ cd ../your_project
+/your_project $ npm install ../mime-types/keeex-mime-types-2.1.26.tgz
 ```
 
 ## Adding Types

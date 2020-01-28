@@ -1,18 +1,22 @@
 {
-  "name": "mime-types",
+  "name": "@keeex/mime-types",
   "description": "The ultimate javascript content-type utility.",
   "version": "2.1.26",
   "contributors": [
     "Douglas Christopher Wilson <doug@somethingdoug.com>",
     "Jeremiah Senkpiel <fishrock123@rocketmail.com> (https://searchbeam.jit.su)",
-    "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)"
+    "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
+    {
+      "name": "Gabriel Paul \"Cley Faye\" Risterucci",
+      "email": "gabriel@keeex.net"
+    }
   ],
   "license": "MIT",
   "keywords": [
     "mime",
     "types"
   ],
-  "repository": "jshttp/mime-types",
+  "repository": "KeeeX/mime-types",
   "dependencies": {
     "mime-db": "1.43.0"
   },
