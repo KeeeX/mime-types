@@ -33,7 +33,8 @@
   "files": [
     "HISTORY.md",
     "LICENSE",
-    "index.js"
+    "index.js",
+    "extname.js"
   ],
   "engines": {
     "node": ">= 0.6"
