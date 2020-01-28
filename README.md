@@ -13,6 +13,8 @@ Similar to [the `mime@1.x` module](https://www.npmjs.com/package/mime), except:
 
 Otherwise, the API is compatible with `mime` 1.x.
 
+This fork is intended to be used where node's libraries are not available. Our main goal was using it with React-Native.
+
 ## Install
 
 This fork of [mime-types](https://github.com/jshttp/mime-types) is not published on the [npm registry](https://www.npmjs.com/).
