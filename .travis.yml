@@ -13,11 +13,11 @@ node_js:
   - "7.10"
   - "8.17"
   - "9.11"
-  - "10.18"
+  - "10.20"
   - "11.15"
-  - "12.14"
-  - "13.3"
-sudo: false
+  - "12.16"
+  - "13.13"
+  - "14.0"
 dist: trusty
 env:
   global:
@@ -90,7 +90,7 @@ before_install:
       npm prune
       npm rebuild
     fi
-before_scrpt:
+before_script:
   - |
     # Contents of node_modules
     npm -s ls ||:
@@ -106,6 +106,8 @@ script:
     fi
 after_script:
   - |
-    # Upload coverage to coveralls
-    npm install coveralls@2
-    nyc report --reporter=text-lcov | coveralls
+    # Upload coverage to coveralls if exists
+    if [[ -d .nyc_output ]]; then
+      npm install --save-dev coveralls@2
+      nyc report --reporter=text-lcov | coveralls
+    fi

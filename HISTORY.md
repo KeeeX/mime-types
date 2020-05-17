@@ -1,3 +1,11 @@
+2.1.30 / 2020-05-17
+===================
+
+  * deps: mime-db@1.44.0
+    - Add charsets from IANA
+    - Add extension `.cjs` to `application/node`
+    - Add new upstream MIME types
+
 2.1.27 / 2020-01-28
 ===================
 
